@@ -1,8 +1,30 @@
 aid: energybank
 name: EnergyBank
-description: 'EnergyBank is a company surfaced as a portfolio company of version-one-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: energy. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'EnergyBank is a New Zealand deep-tech energy company developing next-generation
+  energy storage for the offshore wind market. Its core approach firms floating offshore
+  wind generation at the turbine so that compute modules can be co-located with the
+  generation itself — taking "data to the power rather than electricity to the data"
+  — which removes the need for a grid connection, enables consentless high-seas deployment,
+  and allows direct ocean cooling of the co-located compute. The company was founded
+  by CEO Tim Hawkey and CTO Alex Szczepaniak, and its team combines applied mathematicians,
+  electronics engineers, and business development staff with advisors drawn from subsea
+  turbomachinery. EnergyBank is venture backed by Version One Ventures, Blackbird,
+  Icehouse Ventures, Outset Ventures, Promus Ventures, Nuance Capital, and Boost VC.
+  As of this enrichment pass EnergyBank publishes no public API, developer portal,
+  SDK, or machine-readable specification — it is a hardware and energy-infrastructure
+  company rather than an API provider.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/613030d31a2013fa372a2bf6/615cf267b464835b36e1f5cf_eb.png
 url: https://raw.githubusercontent.com/api-evangelist/energybank/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,13 +32,33 @@ x-backed-by:
 - version-one-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Energy
+- Energy Storage
+- Offshore Wind
+- Renewable Energy
+- Data Centers
+- Deep Tech
+- New Zealand
 apis: []
+common:
+- type: DomainSecurity
+  url: security/energybank-domain-security.yml
+- type: Website
+  url: https://www.energybank.nz/
+- type: Careers
+  url: https://www.energybank.nz/careers
+- type: LLMsTxt
+  url: llms/energybank-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

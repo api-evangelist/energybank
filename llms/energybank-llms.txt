@@ -1,0 +1,32 @@
+# EnergyBank
+
+> EnergyBank is a New Zealand deep-tech energy company building next-generation energy
+> storage for the offshore wind market. It firms floating offshore wind generation at the
+> turbine so compute modules can be co-located with generation — "data to the power rather
+> than electricity to the data" — removing the grid connection, enabling consentless
+> high-seas deployment, and allowing direct ocean cooling of the co-located compute.
+
+EnergyBank publishes **no public API**, developer portal, SDK, CLI, or machine-readable
+specification. It is a hardware and energy-infrastructure company, not an API provider.
+Probes on 2026-07-20 found no `/.well-known/` documents, no `/docs`, `/api`, `/developers`,
+`/status`, or `/llms.txt`. Its GitHub account (`energybank-nz`) has zero public repositories.
+
+## Company
+
+- [Website](https://www.energybank.nz/): Product, team, and investor overview.
+- [Careers](https://www.energybank.nz/careers): Open roles in New Zealand.
+
+## Facts
+
+- Sector: energy storage, offshore wind, renewable energy, data-center power
+- Headquarters: New Zealand
+- Leadership: Tim Hawkey (Co-Founder & CEO), Alex Szczepaniak (CTO)
+- Contact: info@energybank.nz
+- Investors: Version One Ventures, Blackbird, Icehouse Ventures, Outset Ventures,
+  Promus Ventures, Nuance Capital, Boost VC
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/energybank/refs/heads/main/apis.yml): APIs.json 0.20 company profile.
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/energybank/refs/heads/main/security/energybank-domain-security.yml): Probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/energybank/refs/heads/main/well-known/energybank-well-known.yml): Recorded discovery-surface probe results (all absent).

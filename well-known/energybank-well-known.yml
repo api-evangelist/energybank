@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: probed
+source: live probes of https://www.energybank.nz/.well-known/*
+host: https://www.energybank.nz
+note: >-
+  No /.well-known/ discovery documents are published. EnergyBank runs a single
+  Webflow marketing site with no API, developer portal, or authorization server,
+  so there is nothing to discover. Recorded so future enrichment rounds do not
+  re-probe blindly. The apex host energybank.nz 301-redirects to www.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+other_paths:
+- path: /llms.txt
+  status: 404
+- path: /robots.txt
+  status: 200
+  note: empty body
+- path: /sitemap.xml
+  status: 404
+- path: /api
+  status: 404
+- path: /docs
+  status: 404
+- path: /developers
+  status: 404
+- path: /developer
+  status: 404
+- path: /status
+  status: 404
+- path: /privacy
+  status: 404
+- path: /terms
+  status: 404
+- path: /blog
+  status: 404
