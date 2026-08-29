@@ -13,6 +13,17 @@ description: 'EnergyBank is a New Zealand deep-tech energy company developing ne
   As of this enrichment pass EnergyBank publishes no public API, developer portal,
   SDK, or machine-readable specification — it is a hardware and energy-infrastructure
   company rather than an API provider.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
