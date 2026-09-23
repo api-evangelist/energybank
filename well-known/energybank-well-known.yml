@@ -2,22 +2,9 @@ generated: '2026-07-20'
 method: probed
 source: live probes of https://www.energybank.nz/.well-known/*
 host: https://www.energybank.nz
-note: >-
-  No /.well-known/ discovery documents are published. EnergyBank runs a single
-  Webflow marketing site with no API, developer portal, or authorization server,
-  so there is nothing to discover. Recorded so future enrichment rounds do not
-  re-probe blindly. The apex host energybank.nz 301-redirects to www.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
+note: No /.well-known/ discovery documents are published. EnergyBank runs a single Webflow marketing site
+  with no API, developer portal, or authorization server, so there is nothing to discover. Recorded so
+  future enrichment rounds do not re-probe blindly. The apex host energybank.nz 301-redirects to www.
 other_paths:
 - path: /llms.txt
   status: 404
@@ -42,3 +29,21 @@ other_paths:
   status: 404
 - path: /blog
   status: 404
+hosts:
+- host: https://www.energybank.nz
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
