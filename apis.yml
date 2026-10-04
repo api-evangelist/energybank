@@ -57,7 +57,7 @@ tags:
 - Energy Storage
 - Offshore Wind
 - Renewable Energy
-- Data-Center
+- Data Center
 - Deep Tech
 - New Zealand
 tags_raw:
@@ -69,6 +69,7 @@ tags_raw:
 - Data Centers
 - Deep Tech
 - New Zealand
+- Data-Center
 apis: []
 common:
 - type: DomainSecurity
